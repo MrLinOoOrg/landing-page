@@ -2,3 +2,7 @@
 	path = coffee
 	url = https://github.com/Saw-YanLinOo/coffee.git
 	branch = master
+[submodule "the-art"]
+	path = the-art
+	url = https://github.com/Saw-YanLinOo/the-art.git
+	branch = master

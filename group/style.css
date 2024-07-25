@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap");
+
+:root {
+  --main-color: #deab5f;
+  --primary-color: #312e2e;
+  --background-color: #0a0a0a;
+  --text-color: #f4f4f4;
+  --nav-background: rgba(0, 0, 0, 0.8);
+  --card-background: #1a1a1a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--nav-background);
+  padding: 1rem 5%;
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+}
+
+.logo-name {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  color: var(--main-color);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+nav ul li a {
+  font-family: sans-serif;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+nav ul li a:hover {
+  color: var(--main-color);
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+header {
+  height: 100vh;
+  background: url(images/pexels-nao-triponez-129207.jpg) center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.main-heading {
+  font-family: "Playfair Display SC", serif;
+  font-size: 4.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.primary-heading {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+button {
+  background-color: var(--main-color);
+  border: none;
+  color: #333;
+  padding: 0.8rem 1.5rem;
+}
+
+.shop-now {
+  transform: translateY(90px);
+}
+
+.shop-now a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+}
+
+.story {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.story .img {
+  background: url(images/pexels-chitokan-2183027-removebg-preview.png)
+    center/cover;
+  width: 400px;
+  height: 400px;
+}
+
+.content-title {
+  display: flex;
+  align-items: center;
+}
+
+.story .title {
+  font-family: "Playfair Display SC", serif;
+  font-size: 3rem;
+  color: var(--main-color);
+  transform: translateX(-100px);
+}
+
+.line {
+  width: 100px;
+  height: 2px;
+  background: var(--main-color);
+  transform: translateX(-120px);
+}
+
+.content-desc {
+  max-width: 500px;
+  line-height: 1.5rem;
+  margin: 20px 0;
+}
+
+.coffee-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10rem;
+}
+
+.coffee-container img {
+  width: 400px;
+  height: 400px;
+}
+
+.title-container {
+  max-width: 500px;
+}
+
+.title-container .title {
+  font-family: "Playfair Display SC", serif;
+  font-size: 3rem;
+  color: var(--main-color);
+}
+
+.title-container p {
+  line-height: 1.5rem;
+  margin: 20px 0;
+}
+
+.products {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-bottom: 4rem;
+}
+
+.products .title {
+  font-family: "Playfair Display SC", serif;
+  font-size: 3rem;
+  color: var(--main-color);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--card-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  height: 350px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-img {
+  height: 200px;
+  width: 200px;
+  align-items: center;
+  margin: 1rem;
+}
+
+.product-info {
+  padding: 1rem;
+}
+
+.product-title {
+  font-family: "Playfair Display SC", serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.img-1 {
+  background: url(images/1.png) center/cover;
+}
+
+.img-2 {
+  background: url(images/2.png) center/cover;
+}
+
+.img-3 {
+  background: url(images/3.png) center/cover;
+}
+
+.img-4 {
+  background: url(images/4.png) center/cover;
+}
+
+hr {
+  width: 500px;
+  border-color: var(--main-color);
+  margin: 0 auto;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem;
+}
+
+.footer-container .container {
+  max-width: 300px;
+  margin: 20px;
+  text-align: center;
+}
+
+.container .title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+span {
+  color: var(--main-color);
+}
+
+.container p {
+  line-height: 25px;
+}
+
+.copyright {
+  margin: 20px;
+  text-align: center;
+}
